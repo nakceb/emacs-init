@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: new c file
+# key: ncf
+# --
+\#include <stdio.h>
+
+int main(){
+
+
+  return(0);
+}
