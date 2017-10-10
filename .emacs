@@ -10,6 +10,7 @@
  '(custom-enabled-themes (quote (wombat)))
  '(global-anzu-mode t)
  '(delete-selection-mode 1)
+ '(setq make-backup-files nil)
  '(inhibit-startup-screen t)
  '(nyan-animate-nyancat t)
  '(nyan-animation-frame-interval 0.2)
