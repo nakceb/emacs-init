@@ -9,6 +9,7 @@
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(custom-enabled-themes (quote (wombat)))
  '(global-anzu-mode t)
+ '(delete-selection-mode 1)
  '(inhibit-startup-screen t)
  '(nyan-animate-nyancat t)
  '(nyan-animation-frame-interval 0.2)
