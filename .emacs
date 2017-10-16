@@ -1,4 +1,3 @@
-(global-linum-mode)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -6,17 +5,18 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
- '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(custom-enabled-themes (quote (wombat)))
+ '(delete-selection-mode t)
  '(global-anzu-mode t)
- '(delete-selection-mode 1)
- '(setq make-backup-files nil)
+ '(global-linum-mode t)
  '(inhibit-startup-screen t)
+ '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(nyan-animate-nyancat t)
  '(nyan-animation-frame-interval 0.2)
  '(nyan-cat-face-number 2)
  '(nyan-mode t)
  '(nyan-wavy-trail t)
+ '(delete-selection-mode t)
  '(make-backup-files nil)
  '(auto-save-default nil)
  '(package-archives
