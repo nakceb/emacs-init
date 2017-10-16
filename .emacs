@@ -18,6 +18,7 @@
  '(nyan-mode t)
  '(nyan-wavy-trail t)
  '(make-backup-files nil)
+ '(auto-save-default nil)
  '(package-archives
    (quote
     (("gnu" . "http://elpa.gnu.org/packages/")
