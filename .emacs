@@ -24,11 +24,36 @@
     (("gnu" . "http://elpa.gnu.org/packages/")
      ("Melpa" . "https://melpa.org/packages/"))))
  '(tool-bar-mode nil))
- (global-set-key (kbd "C-=") 'er/expand-region)
- (global-set-key (kbd "C-x g") 'magit-status)
+
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(cursor ((t (:background "dark gray")))))
+
+;;;;%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+;;Bindings
+;;;;%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+(global-set-key (kbd "C-=") 'er/expand-region)
+(global-set-key (kbd "C-x g") 'magit-status)
+(global-set-key (kbd "C-<backspace>") 'backward-delete-word)
+(global-set-key (kbd "M-d") 'delete-word)
+
+;;;;%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+;;Functions
+;;;;%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+(defun delete-word (arg)
+  "Delete characters forward until encountering the end of a word.
+With argument ARG, do this that many times."
+  (interactive "p")
+  (delete-region (point) (progn (forward-word arg) (point))))
+
+(defun backward-delete-word (arg)
+  "Delete characters backward until encountering the beginning of a word.
+With argument ARG, do this that many times."
+  (interactive "p")
+  (delete-word (- arg)))
